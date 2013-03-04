@@ -183,13 +183,13 @@
 
 	</pbcoreInstantiation> 
 	<?php } ?>
-	<?php foreach (metadata($item, array('PBCore', 'Notes'), array('all'=>true)) as $notes) { ?>
+	<?php foreach (item('PBCore', 'Notes', array('all'=>true)) as $notes) { ?>
 	<pbcoreAnnotation annotationType="Notes"><?php echo html_escape($notes); ?></pbcoreAnnotation>
 	<?php } ?>
-	<?php foreach (metadata($item, array('PBCore', 'Music/Sound Used'), array('all'=>true)) as $music_sound_used) { ?>
+	<?php foreach (item('PBCore', 'Music/Sound Used', array('all'=>true)) as $music_sound_used) { ?>
 	<pbcoreAnnotation annotationType="MusicUsed"><?php echo html_escape($music_sound_used); ?></pbcoreAnnotation>
 	<?php } ?>
-	<?php foreach (metadata($item, array('PBCore', 'Date Peg'), array('all'=>true)) as $date_peg) { ?>
+	<?php foreach (item('PBCore', 'Date Peg', array('all'=>true)) as $date_peg) { ?>
 	<pbcoreAnnotation annotationType="DatePeg"><?php echo html_escape($date_peg); ?></pbcoreAnnotation>
 	<?php } ?>
 	</pbcoreDescriptionDocument>
